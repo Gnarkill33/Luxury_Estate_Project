@@ -1,18 +1,15 @@
-import styled from "styled-components";
+import { IoSearchSharp } from "react-icons/io5";
+import { SearchButtonElement, SearchIconContainer } from "./SearchButton.style.js";
 
-
-const SearchButton = styled.button`
-    border-radius: 0 10px 10px 10px;
-    border: none;
-    padding: 15px;
-    width: 10.6rem;
-    height: 4.2rem;
-    background: var(--primary-gold-dark);
-    font-family: var(--font-family);
-    font-size: 18px;
-    line-height: 133%;
-    letter-spacing: 0.06em;
-    color: var(--white);
-`
+const SearchButton = () => {
+    return (
+        <SearchButtonElement>
+            <SearchIconContainer>
+                Search
+                < IoSearchSharp size='22px' />
+            </SearchIconContainer>
+        </SearchButtonElement>
+    )
+}
 
 export default SearchButton;

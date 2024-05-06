@@ -23,7 +23,3 @@
   src: local('Rufina'), url(./fonts/Rufina-Regular.ttf) format('truetype');
 }
 
-@font-face {
-  font-family: 'Rufina';
-  src: local('Rufina'), url(./fonts/Rufina-Medium.ttf) format('truetype');
-}

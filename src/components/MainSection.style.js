@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from'styled-components';
 
-const FilterWrapper = styled.div`
+export const FilterWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -12,6 +12,5 @@ const FilterWrapper = styled.div`
     box-shadow: 0 20px 0 0 rgba(24, 29, 36, 0.72);
     background: var(--white);
     margin-top: 7rem;
+    margin-bottom: 10rem;
 `;
-
-export default FilterWrapper;
