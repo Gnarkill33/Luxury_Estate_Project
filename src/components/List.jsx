@@ -6,8 +6,11 @@ const List = () => {
             <ListTitle >
                 Top Pick Villas
             </ListTitle >
-            <ListDescription />
-            <ListBody />
+            <ListDescription>
+                Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies. Morbi nec tempus dui, sit amet facilisis nisl. Ut vel urna quis urna tristique tempus. Etiam lobortis est at mauris eleifend, id tempor purus ultricies.
+            </ ListDescription>
+            <ListBody>
+            </ListBody>
 
         </ListWrapper>
     )

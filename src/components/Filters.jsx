@@ -1,5 +1,5 @@
-import CustomSelect from './CustomSelect';
-import CustomSelectDate from './CustomSelectDate';
+import Select from './Select';
+import SelectDate from './SelectDate/SelectDate';
 
 const optionsLocation = [
     { value: '1', label: 'Spain' },
@@ -25,10 +25,10 @@ const optionsPrice = [
 const Filters = () => {
     return (
         <>
-            <CustomSelect options={optionsLocation} placeholder="Location" />
-            <CustomSelectDate placeholder="Select a date" />
-            <CustomSelect options={optionsGuests} placeholder="Guests" />
-            <CustomSelect options={optionsPrice} placeholder="Price" />
+            <Select options={optionsLocation} placeholder="Location" />
+            <SelectDate />
+            <Select options={optionsGuests} placeholder="Guests" />
+            <Select options={optionsPrice} placeholder="Price" />
         </>
     )
 }
