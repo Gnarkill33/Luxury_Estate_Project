@@ -1,10 +1,10 @@
 :root {
   font-family: Raleway, Rufina, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 :root {
@@ -14,20 +14,29 @@
 }
 
 :root {
-  --lightest: #f5f3f1;
-  --white: #fff;
-  --gold-gold: #c9bdab;
-  --gold-gold: #c9bdab;
-  --primary-gold-dark: #5b656f;
+	--dark: #181d24;
+	--white: #fff;
+	--primary-gold-dark: #5b656f;
+	--primary-gold-medium: #8998a6;
+	--primary-gold-light: #dfe3e7;
+	--gold-gold: #c9bdab;
+	--gold-gold-light: #f5e9d6;
+	--gold-lightest: #f5f3f1;
+	--grey: #646464;
+	--lightest: #f5f3f1;
+  --title-background: rgba(255, 255, 255, 0.94);
+  --menu-gradient: rgba(3, 3, 3, 0.2);
+  --filter-input: hsl(0, 0%, 50%);
+
 }
 
 body {
   background-image: url('./assets/images/homepage_bg.svg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 

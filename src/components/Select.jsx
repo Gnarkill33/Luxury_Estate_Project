@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Select from 'react-select';
 
-const CustomSelectGuests = styled(Select).attrs({
+const CustomSelectLocation = styled(Select).attrs({
     styles: {
         control: (provided) => ({
             ...provided,
@@ -11,7 +11,6 @@ const CustomSelectGuests = styled(Select).attrs({
             width: '12rem',
             height: '24px',
             fontFamily: 'var(--font-family)',
-            placeholder: 'Select a country',
             padding: '0 10px',
             margin: '10px 0 0 10px',
             border: 'none',
@@ -24,4 +23,4 @@ const CustomSelectGuests = styled(Select).attrs({
     }
 })``;
 
-export default CustomSelectGuests
+export default CustomSelectLocation
