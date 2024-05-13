@@ -24,9 +24,8 @@ const optionsPrice = [
 
 const Filters = () => {
     return (
-        <>
+        <>  <SelectDate />
             <Select options={optionsLocation} placeholder="Location" />
-            <SelectDate />
             <Select options={optionsGuests} placeholder="Guests" />
             <Select options={optionsPrice} placeholder="Price" />
         </>

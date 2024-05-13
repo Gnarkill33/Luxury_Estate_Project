@@ -4,7 +4,8 @@ export const SearchButtonElement = styled.button`
     border-radius: 0 10px 10px 10px;
     border: none;
     padding: 15px;
-    width: 10.6rem;
+    // width: "max-content",
+    // minWidth: "100%"
     height: 3.2rem;
     background: var(--primary-gold-dark);
     font-family: var(--font-family);
@@ -12,6 +13,10 @@ export const SearchButtonElement = styled.button`
     line-height: 133%;
     letter-spacing: 0.06em;
     color: var(--white);
+    width: 100%;
+    min-width: 100px; 
+    max-width: 150px;
+    z-index: 1;
 `;
 
 export const SearchIconContainer = styled.div`

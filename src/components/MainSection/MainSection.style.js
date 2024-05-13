@@ -7,7 +7,9 @@ export const FilterWrapper = styled.div`
     border-bottom: 5px solid var(--gold-gold);
     border-radius: 10px;
     padding: 10px;
-    width: 65rem;
+    max-width: 65rem;
+    width: auto;
+    overflow: hidden;
     height: 3.5rem;
     box-shadow: 0 20px 0 0 rgba(24, 29, 36, 0.72);
     background: var(--white);
