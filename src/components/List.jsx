@@ -22,7 +22,7 @@ const data = [
         "guests": "11 guests",
         "bedrooms": '6 bedrooms',
         "area": "120 m2",
-        "bathrooms": '25 bathrooms',
+        "bathrooms": '5 bathrooms',
         "image": "images/Villa2.svg",
         "price": "From €110 / daily",
     },

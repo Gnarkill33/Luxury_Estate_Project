@@ -25,14 +25,4 @@
   --title-background: rgba(255, 255, 255, 0.94);
   --menu-gradient: rgba(3, 3, 3, 0.2);
   --filter-input: hsl(0, 0%, 50%);
-
 }
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-
-
-

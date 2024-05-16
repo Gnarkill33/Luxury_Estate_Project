@@ -10,7 +10,6 @@ export const FilterWrapper = styled.div`
     max-width: 65rem;
     width: auto;
     overflow: hidden;
-    height: 3.5rem;
     box-shadow: 0 20px 0 0 rgba(24, 29, 36, 0.72);
     background: var(--white);
     margin-top: 7rem;

@@ -35,8 +35,6 @@ export const CardPrice = styled.div`
     border-bottom: 4px solid #918675;
     border-radius: 4px 4px 20px 4px;
     padding: 10px;
-    width: 6.5rem;
-    height: 0.9rem;
     background: var(--gold-gold-light);
 `
 
@@ -52,7 +50,6 @@ export const CardLocation = styled.p`
     margin: 10px 0 0 0;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 15px;
 `
 
 export const CardName = styled.h3`
@@ -72,7 +69,6 @@ export const CardDetails = styled.div`
     grid-template-rows: 1fr 1fr;
     margin: 7px 0 0 0;
     gap: 10px;
-    font-size: 15px;
 `
 
 export const DetailsWrapper = styled.div`

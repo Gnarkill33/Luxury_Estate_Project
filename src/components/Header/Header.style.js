@@ -7,5 +7,6 @@ export const HeaderElement = styled.div`
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
+    background-color: var(--gold-lightest);
 `
 

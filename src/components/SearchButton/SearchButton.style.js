@@ -4,8 +4,6 @@ export const SearchButtonElement = styled.button`
     border-radius: 0 10px 10px 10px;
     border: none;
     padding: 15px;
-    // width: "max-content",
-    // minWidth: "100%"
     height: 3.2rem;
     background: var(--primary-gold-dark);
     font-family: var(--font-family);
