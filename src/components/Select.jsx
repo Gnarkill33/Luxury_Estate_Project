@@ -12,14 +12,15 @@ const CustomSelectLocation = styled(Select).attrs({
             fontFamily: 'var(--font-family)',
             padding: '0 10px',
             margin: '10px 0 0 10px',
-            border: 'none',
+            border: 0,
+            boxShadow: 'none',
             width: "max-content",
             minWidth: "100%",
+            marginRight: '50px',
         }),
         option: (provided) => ({
             ...provided,
             cursor: 'pointer',
-
         })
     }
 })``;

@@ -15,6 +15,7 @@ export const SearchButtonElement = styled.button`
     min-width: 100px; 
     max-width: 150px;
     z-index: 1;
+    margin: 0 auto;
 `;
 
 export const SearchIconContainer = styled.div`
