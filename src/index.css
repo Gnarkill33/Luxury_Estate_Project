@@ -1,6 +1,5 @@
 :root {
   font-family: Raleway, Rufina, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,7 +9,6 @@
 :root {
 --font-family: "Raleway", sans-serif;
 --second-family: "Rufina", sans-serif;
-
 }
 
 :root {
@@ -27,18 +25,4 @@
   --title-background: rgba(255, 255, 255, 0.94);
   --menu-gradient: rgba(3, 3, 3, 0.2);
   --filter-input: hsl(0, 0%, 50%);
-
 }
-
-body {
-  background-image: url('./assets/images/homepage_bg.svg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-

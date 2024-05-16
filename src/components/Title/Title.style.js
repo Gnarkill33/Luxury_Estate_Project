@@ -7,7 +7,6 @@ export const TitleWrapper = styled.div`
     border-radius: 0 5px 5px 5px;
     padding: 0.3rem 1.2rem;
     width: 29rem;
-    height: 1.5rem;
     background: var(--title-background);
 `;
 
