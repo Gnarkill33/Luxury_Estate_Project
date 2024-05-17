@@ -12,10 +12,13 @@ export const CardWrapper = styled.div`
     border-radius: 8px 8px 30px 8px;
     width: 19rem;
     height: 25rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 15px 28px 0 rgba(0, 0, 0, 0.02), 0 66px 125px 0 rgba(0, 0, 0, 0.04);
     background: var(--white);
     margin: 0 auto;
     max-width: 30rem;
+
+    @media screen and (max-width: 375px) {
+        height: 24rem;
+    }
 `
 
 export const CardImage = styled.div`
@@ -50,6 +53,7 @@ export const CardLocation = styled.p`
     margin: 10px 0 0 0;
     font-family: var(--font-family);
     font-weight: 700;
+    font-size: 0.9em;
 `
 
 export const CardName = styled.h3`
@@ -60,6 +64,10 @@ export const CardName = styled.h3`
     letter-spacing: 0.03em;
     color: var(--dark);
     margin: 10px 0 0 0;
+
+    @media screen and (max-width: 375px) {
+        font-size: 20px;
+    }
 `
 
 export const CardDetails = styled.div`
@@ -69,6 +77,11 @@ export const CardDetails = styled.div`
     grid-template-rows: 1fr 1fr;
     margin: 7px 0 0 0;
     gap: 10px;
+    font-size: 0.9em;
+
+    @media screen and (max-width: 375px) {
+        font-size: 10px;
+    }
 `
 
 export const DetailsWrapper = styled.div`

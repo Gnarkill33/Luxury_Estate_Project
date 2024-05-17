@@ -14,9 +14,9 @@ const CustomSelectLocation = styled(Select).attrs({
             margin: '10px 0 0 10px',
             border: 0,
             boxShadow: 'none',
-            width: "max-content",
+            maxWidth: "max-content",
             minWidth: "100%",
-            marginRight: '50px',
+            marginRight: '3rem',
         }),
         option: (provided) => ({
             ...provided,
