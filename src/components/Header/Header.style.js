@@ -9,4 +9,3 @@ export const HeaderElement = styled.div`
     height: 100vh;
     background-color: var(--gold-lightest);
 `
-

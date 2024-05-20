@@ -13,4 +13,8 @@ export const FilterWrapper = styled.div`
     background: var(--white);
     margin-top: 7rem;
     margin-bottom: 10rem;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 `;

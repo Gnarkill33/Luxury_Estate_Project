@@ -6,8 +6,13 @@ export const TitleWrapper = styled.div`
     justify-content: center;
     border-radius: 0 5px 5px 5px;
     padding: 0.3rem 1.2rem;
-    width: 29rem;
+    max-width: 30rem;
     background: var(--title-background);
+
+    @media screen and (max-width: 480px) {
+        width: 25rem;
+        padding: 0.3rem 0.2rem;
+    }
 `;
 
 export const TitleElement = styled.h2`
@@ -21,6 +26,11 @@ export const TitleElement = styled.h2`
     margin-top: ${props => props.$small? "0" : "11rem"};
     margin-bottom: ${props => props.$small? "0" : "1rem"};
     text-align: center;
+
+    @media screen and (max-width: 480px) {
+        font-size: ${props => props.$small? "1em" : "3.5em"};
+        margin-top: ${props => props.$small? "0" : "20rem"};
+    }
 `; 
 
 

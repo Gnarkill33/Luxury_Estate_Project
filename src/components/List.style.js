@@ -14,6 +14,11 @@ export const ListTitle = styled.h2`
     color: var(--dark);
     padding: 6rem 0 2rem 0;
     margin: 0;
+
+    @media screen and (max-width: 480px) {
+        font-size: 2.5em;
+        padding: 4rem 0 1rem 0;
+    }
 `
 
 export const ListDescription = styled.div`
@@ -27,14 +32,24 @@ export const ListDescription = styled.div`
     max-width: 60rem;
     width:auto;
     padding: 0 1rem 2rem 1rem;
+
+    @media screen and (max-width: 480px) {
+        padding: 0 1rem 1rem 1rem;
+    }
 `
 
 export const ListBody = styled.div`
-    display: grid;
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow: hidden;
     justify-content: center;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    padding: 0 10rem;
+    gap: 20px;
     max-width: 60rem;
     margin: 0 auto;
+
+    @media screen and (max-width: 480px) {
+        padding: 0 1rem;
+        display: flex;
+        justify-content: flex-start;
+    }
 `
