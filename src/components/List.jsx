@@ -54,9 +54,7 @@ const List = () => {
                     return <Card key={data.id} info={item} />
                 })
                 }
-
             </ListBody>
-
         </ListWrapper>
     )
 }
