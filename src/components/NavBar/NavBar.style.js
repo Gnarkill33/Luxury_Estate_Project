@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         display: grid;
         grid-template-columns: 250px 1fr;
     }
@@ -19,7 +19,7 @@ export const LinkWrapper = styled.div`
     gap: 40px;
     margin: 0 15rem 0 0;
     
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         gap: 0;
     }
 `
@@ -36,7 +36,7 @@ export const Link = styled.a`
     line-height: 5rem;
     cursor: pointer;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         margin-left: ${props => props.$primary? "2rem" : "0"};
         font-size: ${props => props.$primary? "1em" : "0"};
     }

@@ -15,9 +15,9 @@ export const ListTitle = styled.h2`
     padding: 6rem 0 2rem 0;
     margin: 0;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         font-size: 2.5em;
-        padding: 3rem 0 1rem 0;
+        padding: 4rem 0 1rem 0;
     }
 `
 
@@ -33,7 +33,7 @@ export const ListDescription = styled.div`
     width:auto;
     padding: 0 1rem 2rem 1rem;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         padding: 0 1rem 1rem 1rem;
     }
 `
@@ -47,7 +47,7 @@ export const ListBody = styled.div`
     max-width: 60rem;
     margin: 0 auto;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         padding: 0 1rem;
         display: flex;
         justify-content: flex-start;

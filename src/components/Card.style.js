@@ -16,7 +16,7 @@ export const CardWrapper = styled.div`
     margin: 0 auto;
     max-width: 30rem;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         height: 24rem;
     }
 `
@@ -32,6 +32,7 @@ export const CardContainer = styled.div`
     margin: 20px 0 0 0;
     padding: 0 20px 0 20px;
 `
+
 export const CardPrice = styled.div`
     font-size: 10px;
     font-weight: 700;
@@ -65,7 +66,7 @@ export const CardName = styled.h3`
     color: var(--dark);
     margin: 10px 0 0 0;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         font-size: 20px;
     }
 `
@@ -79,7 +80,7 @@ export const CardDetails = styled.div`
     gap: 10px;
     font-size: 0.9em;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         font-size: 10px;
     }
 `

@@ -14,7 +14,7 @@ export const FilterWrapper = styled.div`
     margin-top: 7rem;
     margin-bottom: 10rem;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         display: none;
     }
 `;
