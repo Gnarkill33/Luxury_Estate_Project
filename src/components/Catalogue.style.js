@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CatalogueWrapper = styled.div`
     width: 100%;
     height: 100vh;
-    border-radius: 0px 10px 120px 10px;
+    border-radius: 0px 10px 75px 10px;
     background: var(--gold-gold);
 `
 
@@ -16,7 +16,7 @@ export const CatalogueTitle = styled.h2`
     text-align: center;
     padding-top: 5rem;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         font-size: 38px;
         padding-top: 2rem;
     }
@@ -32,9 +32,9 @@ export const CatalogueDescription = styled.div`
     line-height: 24px;
     text-align: center;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         margin: 0 5px;
-        font-size: 13px;
+        font-size: 12px;
     }
 `
 
@@ -44,9 +44,10 @@ export const CatalogueBody = styled.div`
     gap: 1rem;
     margin-top: 2.5rem;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
     }
 `

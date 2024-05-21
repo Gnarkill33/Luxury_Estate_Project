@@ -7,5 +7,5 @@ export const HeaderElement = styled.div`
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
-    background-color: var(--gold-lightest);
+    border-radius: 0px 10px 75px 10px;
 `

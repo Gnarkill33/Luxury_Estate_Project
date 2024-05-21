@@ -4,15 +4,15 @@ export const CatalogueItemWrapper = styled.div`
     width: 28%;
     height: 50vh;
     ${ props => props.index === "1" && css`
-    border-radius: 3px 70px 3px 70px;
+    border-radius: 3px 50px 3px 50px;
     `}
     ${ props => props.index === "2" && css`
-    border-radius: 70px 3px 70px 3px;
+    border-radius: 50px 3px 50px 3px;
     `}
 
-    @media screen and (max-width: 375px) {
-        width: 90%;
-        height: 15%;
+    @media screen and (max-width: 480px) {
+        width: 65%;
+        height: 33vh;
 `
     
 export const CatalogueItemName = styled.h3`
@@ -23,6 +23,11 @@ export const CatalogueItemName = styled.h3`
     line-height: 44px;
     text-align: left;
     padding: 16rem 2rem 0 2rem;
+
+    @media screen and (max-width: 480px) {
+        font-size: 24px;
+        padding: 8rem 2rem 0 2rem;
+    }
 `
 
 export const CatalogueItemDetails = styled.div`
@@ -34,4 +39,9 @@ export const CatalogueItemDetails = styled.div`
     letter-spacing: 0%;
     text-align: left;
     padding: 0 2rem 0 2rem;
+
+    @media screen and (max-width: 480px) {
+        font-size: 10px;
+        padding: 0 2rem 1rem 2rem;
+    }
 `
