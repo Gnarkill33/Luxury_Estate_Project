@@ -1,8 +1,10 @@
 import './App.css'
 import './css_reset.css'
-import List from './components/List';
+import List from './components/List/List';
 import Header from './components/Header/Header';
-import Catalogue from './components/Catalogue';
+import Catalogue from './components/Catalogue/Catalogue';
+import Specialities from './components/Specialities/Specialities';
+
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
             < Header />
             < List />
             < Catalogue />
+            < Specialities />
         </>
     )
 }
