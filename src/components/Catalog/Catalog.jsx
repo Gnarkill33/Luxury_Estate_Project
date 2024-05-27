@@ -1,5 +1,5 @@
-import { CatalogueWrapper, CatalogueTitle, CatalogueDescription, CatalogueBody } from "./Catalogue.style.js"
-import CatalogueItem from './CatalogueItem'
+import { CatalogueWrapper, CatalogueTitle, CatalogueDescription, CatalogueBody } from "./Catalog.style.js"
+import CatalogueItem from './CatalogItem.jsx'
 
 const propertiesInfo = [
     {

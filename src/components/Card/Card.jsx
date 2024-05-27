@@ -3,7 +3,7 @@ import { CardWrapper, CardImage, CardContainer, CardPrice, CardBody, CardName, C
 const Card = ({ info }) => {
     return (
         <CardWrapper>
-            <CardImage style={{ backgroundImage: `url(${info.image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+            < CardImage image={info.image} >
                 <CardContainer>
                     <CardPrice>
                         {info.price}

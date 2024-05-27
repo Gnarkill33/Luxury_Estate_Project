@@ -1,9 +1,9 @@
 import { ListWrapper, ListTitle, ListDescription, ListBody } from './List.style.js';
-import Card from './Card';
+import Card from '../Card/Card.jsx';
 
 const data = [
     {
-        "id": 1,
+        "id": "1",
         "country": "Italy",
         "location": "Mountains",
         "name": "Villa Makarska",
@@ -15,7 +15,7 @@ const data = [
         "price": "From €280 / daily",
     },
     {
-        "id": 2,
+        "id": "2",
         "country": "Greece",
         "location": "Seaside",
         "name": "Villa Roxane",
@@ -27,7 +27,7 @@ const data = [
         "price": "From €110 / daily",
     },
     {
-        "id": 3,
+        "id": "3",
         "country": "Greece",
         "location": "Seaside",
         "name": "Aphrodite",
@@ -51,7 +51,7 @@ const List = () => {
             </ ListDescription>
             <ListBody>
                 {data.map(item => {
-                    return <Card key={data.id} info={item} />
+                    return <Card key={item.id} info={item} index={item.id} />
                 })
                 }
             </ListBody>

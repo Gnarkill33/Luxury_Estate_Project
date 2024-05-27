@@ -1,4 +1,4 @@
-import styled from'styled-components'
+import styled, { css } from 'styled-components';
 import { IoEllipse } from "react-icons/io5";
 import { IoPeopleOutline } from "react-icons/io5";
 import { IoBedOutline } from "react-icons/io5";
@@ -24,6 +24,10 @@ export const CardWrapper = styled.div`
 export const CardImage = styled.div`
     width: 100%;
     height: 100%;
+    background-image: url(${props => props.image});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
 `
 
 export const CardContainer = styled.div`
