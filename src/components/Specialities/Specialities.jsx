@@ -1,9 +1,5 @@
-import { SpecialityBody, SpecialityTitle, SpecialityList, SpecialityContainer, SpecialityBottom } from './Specialities.style.js';
-import { IoIosWater } from "react-icons/io";
-import { IoIosPaw } from "react-icons/io";
-import { IoIosCar } from "react-icons/io";
-import { IoMdFitness } from "react-icons/io";
-import { IoMdBoat } from "react-icons/io";
+import { SpecialityBody, SpecialityTitle, SpecialityList, SpecialityContainer, SpecialityBottom, Icon } from './Specialities.style.js';
+import { IoIosWater, IoIosPaw, IoIosCar, IoMdFitness, IoMdBoat } from "react-icons/io";
 import SpecialityItem from './SpecialityItem.jsx';
 import JoinWindow from '../JoinWindow/JoinWindow.jsx';
 
@@ -12,31 +8,31 @@ const specialitiesInfo = [
         "id": "1",
         "name": "Seafront",
         "text": "have a look",
-        "icon": IoIosWater,
+        "icon": <IoIosWater />,
     },
     {
         "id": "2",
         "name": "Pet friendly",
         "text": "pets allowed",
-        "icon": IoIosPaw,
+        "icon": <IoIosPaw />,
     },
     {
         "id": "3",
         "name": "Electric car",
         "text": "charge your car",
-        "icon": IoIosCar,
+        "icon": <IoIosCar />,
     },
     {
         "id": "4",
         "name": "Fitness/Gym",
         "text": "work out",
-        "icon": IoMdFitness,
+        "icon": <IoMdFitness />,
     },
     {
         "id": "5",
         "name": "Boat mooring",
         "text": "take a trip",
-        "icon": IoMdBoat,
+        "icon": <IoMdBoat />,
     },
 ]
 
@@ -50,6 +46,7 @@ const Specialities = () => {
                 {specialitiesInfo.map((speciality) => {
                     return (
                         <SpecialityContainer key={speciality.id}>
+                            <Icon>{speciality.icon}</Icon>
                             < SpecialityItem speciality={speciality} />
                         </ SpecialityContainer>
                     )

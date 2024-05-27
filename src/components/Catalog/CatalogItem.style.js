@@ -4,14 +4,14 @@ export const CatalogueItemWrapper = styled.div`
     width: 28%;
     height: 50vh;
     ${ props => props.index === "1" && css`
-    background-image: url(${props.url});
+    background-image: url(${props.image});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 3px 50px 3px 50px;
     `}
     ${ props => props.index === "2" && css`
-    background-image: url(${props.url});
+    background-image: url(${props.image});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

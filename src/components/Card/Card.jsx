@@ -1,9 +1,9 @@
 import { CardWrapper, CardImage, CardContainer, CardPrice, CardBody, CardName, CardDetails, CardLocation, IconDivider, DetailsWrapper, IconGuests, IconBeds, IconBaths, IconArea, IconLike } from './Card.style.js'
 
-const Card = ({ info, index }) => {
+const Card = ({ info }) => {
     return (
         <CardWrapper>
-            < CardImage index={index} url={info.image} >
+            < CardImage image={info.image} >
                 <CardContainer>
                     <CardPrice>
                         {info.price}

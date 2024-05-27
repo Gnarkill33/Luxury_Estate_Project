@@ -24,24 +24,10 @@ export const CardWrapper = styled.div`
 export const CardImage = styled.div`
     width: 100%;
     height: 100%;
-    ${ props => props.index === "1" && css`
-    background-image: url(${props.url});
+    background-image: url(${props => props.image});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
-    `}
-    ${ props => props.index === "2" && css`
-    background-image: url(${props.url});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    `}
-    ${ props => props.index === "3" && css`
-    background-image: url(${props.url});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    `}
 `
 
 export const CardContainer = styled.div`

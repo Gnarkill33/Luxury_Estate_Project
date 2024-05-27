@@ -4,7 +4,7 @@ export const SpecialityWrapper = styled.li`
     height: 60px;
     display: flex;
     flex-direction: column;
-    padding: 10px 30px 0 30px;
+    padding: 0.3rem 1.8rem 0 1.8rem;
 
     @media screen and (max-width: 480px) {
         padding: 0 0 0 10px;
@@ -31,6 +31,7 @@ export const SpecialityText = styled.div`
 `;
 
 export const Icon = styled.div`
-    size: 20px;
+    min-width: 20px;
+    min-height: 20px;
     color: var(--gold-gold);
 `;

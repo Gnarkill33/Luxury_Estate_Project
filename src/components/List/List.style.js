@@ -4,6 +4,10 @@ export const ListWrapper = styled.div`
     width: 100%;
     height: 100vh;
     background-color: var(--gold-lightest);
+
+    @media screen {
+        margin-bottom: 3rem;
+    }
 `
 
 export const ListTitle = styled.h2`

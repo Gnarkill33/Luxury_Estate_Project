@@ -2,7 +2,7 @@ import { CatalogueItemWrapper, CatalogueItemName, CatalogueItemDetails } from '.
 
 const CatalogueItem = ({ info, index }) => {
     return (
-        <CatalogueItemWrapper index={index} url={info.image}>
+        <CatalogueItemWrapper index={index} image={info.image}>
             <CatalogueItemName>{info.location}</CatalogueItemName>
             <CatalogueItemDetails>{info.number} properties</CatalogueItemDetails>
         </CatalogueItemWrapper >
