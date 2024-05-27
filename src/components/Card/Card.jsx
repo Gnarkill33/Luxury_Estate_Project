@@ -1,9 +1,9 @@
 import { CardWrapper, CardImage, CardContainer, CardPrice, CardBody, CardName, CardDetails, CardLocation, IconDivider, DetailsWrapper, IconGuests, IconBeds, IconBaths, IconArea, IconLike } from './Card.style.js'
 
-const Card = ({ info }) => {
+const Card = ({ info, index }) => {
     return (
         <CardWrapper>
-            <CardImage style={{ backgroundImage: `url(${info.image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+            < CardImage index={index} url={info.image} >
                 <CardContainer>
                     <CardPrice>
                         {info.price}

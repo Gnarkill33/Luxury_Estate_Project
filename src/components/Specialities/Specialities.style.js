@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import Image from '../../assets/images/Bottom.svg';
-import { IoIosWater } from "react-icons/io";
-import { IoIosPaw } from "react-icons/io";
-import { IoIosCar } from "react-icons/io";
-import { IoMdFitness } from "react-icons/io";
-import { IoMdBoat } from "react-icons/io";
+// import { IoIosWater } from "react-icons/io";
+// import { IoIosPaw } from "react-icons/io";
+// import { IoIosCar } from "react-icons/io";
+// import { IoMdFitness } from "react-icons/io";
+// import { IoMdBoat } from "react-icons/io";
 
 export const SpecialityBody = styled.div`
     display: flex;
@@ -83,57 +83,63 @@ export const SpecialityBottom = styled.div`
     border-radius: 0px 0px 75px 10px;
 `;
 
-export const IconWater = styled(IoIosWater)`
-    size: 20px;
-    color: var(--gold-gold);
-    margin-left: 27px;
+// export const IconWater = styled(IoIosWater)`
+//     size: 20px;
+//     color: var(--gold-gold);
+//     margin-left: 27px;
 
-    @media screen and (max-width: 480px) {
-        margin: 0;
-        padding-bottom: 22px;
-    }
-`;
+//     @media screen and (max-width: 480px) {
+//         margin: 0;
+//         padding-bottom: 22px;
+//     }
+// `;
 
-export const IconPaw = styled(IoIosPaw)`
-    size: 20px;
-    color: var(--gold-gold);
-    margin-left: 27px;
+// export const IconPaw = styled(IoIosPaw)`
+//     size: 20px;
+//     color: var(--gold-gold);
+//     margin-left: 27px;
 
-    @media screen and (max-width: 480px) {
-        margin: 0;
-        padding-bottom: 22px;
-    }
-`;
+//     @media screen and (max-width: 480px) {
+//         margin: 0;
+//         padding-bottom: 22px;
+//     }
+// `;
 
-export const IconCar = styled(IoIosCar)`
-    size: 20px;
-    color: var(--gold-gold);
-    margin-left: 27px;
+// export const IconCar = styled(IoIosCar)`
+//     size: 20px;
+//     color: var(--gold-gold);
+//     margin-left: 27px;
 
-    @media screen and (max-width: 480px) {
-        margin: 0;
-        padding-bottom: 22px;
-    }
-`;
+//     @media screen and (max-width: 480px) {
+//         margin: 0;
+//         padding-bottom: 22px;
+//     }
+// `;
 
-export const IconFitness = styled(IoMdFitness)`
-    size: 20px;
-    color: var(--gold-gold);
-    margin-left: 27px;
+// export const IconFitness = styled(IoMdFitness)`
+//     size: 20px;
+//     color: var(--gold-gold);
+//     margin-left: 27px;
 
-    @media screen and (max-width: 480px) {
-        margin: 0;
-        padding-bottom: 22px;
-    }
-`;
+//     @media screen and (max-width: 480px) {
+//         margin: 0;
+//         padding-bottom: 22px;
+//     }
+// `;
 
-export const IconBoat = styled(IoMdBoat)`
-    size: 20px;
-    color: var(--gold-gold);
-    margin-left: 27px;
+// export const IconBoat = styled(IoMdBoat)`
+//     size: 20px;
+//     color: var(--gold-gold);
+//     margin-left: 27px;
 
-    @media screen and (max-width: 480px) {
-        margin: 0;
-        padding-bottom: 22px;
-    }
-`;
+//     @media screen and (max-width: 480px) {
+//         margin: 0;
+//         padding-bottom: 22px;
+//     }
+// `;
+
+// export const Icon = styled.div`
+//     size: 20px;
+//     color: var(--gold-gold);
+//     margin-left: 27px;
+// `

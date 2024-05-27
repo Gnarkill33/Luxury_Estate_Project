@@ -29,3 +29,8 @@ export const SpecialityText = styled.div`
     text-align: left;
     letter-spacing: 0.5px;
 `;
+
+export const Icon = styled.div`
+    size: 20px;
+    color: var(--gold-gold);
+`;
