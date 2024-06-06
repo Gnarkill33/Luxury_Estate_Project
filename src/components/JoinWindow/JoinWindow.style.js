@@ -35,13 +35,13 @@ export const JoinWindowTop = styled.p`
 `;
 
 export const JoinWindowTitle = styled.h3`
-    color: var(--dark);
+    color: ${props => props.$textColor || 'var(--dark)'};
     font-family: Rufina;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: ${props => props.$textAlign || 'center'};;
 
     @media screen and (max-width: 480px) {
         font-size: 25px;
@@ -75,7 +75,7 @@ export const JoinButton = styled.button`
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--white);
-    width: 100%;
+    width: ${props => props.$small || '100%'};
     min-width: 100px; 
     max-width: 20rem;
     margin: 2rem auto;
