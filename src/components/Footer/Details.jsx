@@ -1,7 +1,7 @@
-import { Container, Wrapper, Title, Text, Contacts, IconsWrapper } from './Details.style.js';
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { Container, Wrapper, Title, Text, Contacts, IconsWrapper } from './Details.style.js';
 
 const Details = () => {
     return (

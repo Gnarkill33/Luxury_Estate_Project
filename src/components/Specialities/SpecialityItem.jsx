@@ -1,5 +1,5 @@
-import { SpecialityWrapper, SpecialityName, SpecialityText } from './SpecialityItem.style.js'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { SpecialityWrapper, SpecialityName, SpecialityText } from './SpecialityItem.style.js'
 
 const SpecialityItem = ({ speciality }) => {
     return (

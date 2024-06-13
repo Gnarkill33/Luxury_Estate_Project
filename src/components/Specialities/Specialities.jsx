@@ -1,5 +1,5 @@
-import { SpecialityBody, SpecialityTitle, SpecialityList, SpecialityContainer, SpecialityBottom, Icon } from './Specialities.style.js';
 import { IoIosWater, IoIosPaw, IoIosCar, IoMdFitness, IoMdBoat } from "react-icons/io";
+import { SpecialityBody, SpecialityTitle, SpecialityList, SpecialityContainer, SpecialityBottom, Icon } from './Specialities.style.js';
 import SpecialityItem from './SpecialityItem.jsx';
 import JoinWindow from '../JoinWindow/JoinWindow.jsx';
 
