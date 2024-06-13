@@ -20,7 +20,7 @@ export const CatalogueItemWrapper = styled.div`
 
     @media screen and (max-width: 480px) {
         width: 65%;
-        height: 33vh;
+        height: auto;
 `
     
 export const CatalogueItemName = styled.h3`
