@@ -7,7 +7,7 @@ const MainSection = () => {
     return (
         < >
             <Title />
-            <FilterWrapper>
+            <FilterWrapper >
                 <Filters />
                 <SearchButton />
             </FilterWrapper>

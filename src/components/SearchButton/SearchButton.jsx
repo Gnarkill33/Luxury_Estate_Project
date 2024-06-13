@@ -5,7 +5,7 @@ const SearchButton = () => {
     return (
         <SearchButtonElement>
             <SearchIconContainer>
-                Search
+                Search                
                 < IoSearchSharp size='22px' />
             </SearchIconContainer>
         </SearchButtonElement>

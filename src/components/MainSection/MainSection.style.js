@@ -11,8 +11,8 @@ export const FilterWrapper = styled.div`
     width: auto;
     box-shadow: 0 20px 0 0 rgba(24, 29, 36, 0.72);
     background: var(--white);
-    margin-top: 7rem;
-    margin-bottom: 10rem;
+    margin-top: ${props => props.$marginTop || '7rem'};
+    margin-bottom: ${props => props.$marginBottom || '10rem'};
 
     @media screen and (max-width: 480px) {
         display: none;

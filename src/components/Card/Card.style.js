@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { IoEllipse } from "react-icons/io5";
 import { IoPeopleOutline } from "react-icons/io5";
 import { IoBedOutline } from "react-icons/io5";

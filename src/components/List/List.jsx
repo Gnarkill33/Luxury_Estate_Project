@@ -51,7 +51,7 @@ const List = () => {
             </ ListDescription>
             <ListBody>
                 {data.map(item => {
-                    return <Card key={item.id} info={item} index={item.id} />
+                    return <Card key={item.id} {...item} index={item.id} />
                 })
                 }
             </ListBody>
