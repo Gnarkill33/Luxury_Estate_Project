@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
     position: absolute;
-    top: 16rem;
+    top: 14rem;
     left: 19rem;
     width: 65%;
     height: 70%;

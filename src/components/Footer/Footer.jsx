@@ -18,9 +18,7 @@ const Footer = () => {
                 <Links />
             </Bottom>
         </Wrapper>
-
     )
-
 }
 
 export default Footer;

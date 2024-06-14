@@ -7,6 +7,7 @@ import { JoinButton } from '../JoinWindow/JoinWindow.style.js';
 import { FilterWrapper } from '../MainSection/MainSection.style.js';
 import { Container, Results, CardWrapper } from './Gallery.style.js';
 import { JoinWindowTitle } from '../JoinWindow/JoinWindow.style.js';
+import Footer from '../Footer/Footer';
 
 
 const Gallery = () => {
@@ -33,7 +34,9 @@ const Gallery = () => {
                 })
                 }
             </CardWrapper>
+            <Footer />
         </Container>
+     
     )
 }
 
