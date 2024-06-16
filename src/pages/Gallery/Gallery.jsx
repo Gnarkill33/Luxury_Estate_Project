@@ -1,13 +1,13 @@
 import { mock } from '../../data.mock.js';
-import Navbar from '../NavBar/NavBar';
-import Filters from '../Filters'
-import Card from '../Card/Card';
-import SearchButton from '../SearchButton/SearchButton';
-import { JoinButton } from '../JoinWindow/JoinWindow.style.js';
-import { FilterWrapper } from '../MainSection/MainSection.style.js';
+import Navbar from '../../components/NavBar/NavBar.jsx';
+import Filters from '../../components/Filters.jsx'
+import Card from '../../components/Card/Card.jsx';
+import SearchButton from '../../components/SearchButton/SearchButton.jsx';
+import { JoinButton } from '../../components/JoinWindow/JoinWindow.style.js';
+import { FilterWrapper } from '../../components/MainSection/MainSection.style.js';
 import { Container, Results, CardWrapper } from './Gallery.style.js';
-import { JoinWindowTitle } from '../JoinWindow/JoinWindow.style.js';
-import Footer from '../Footer/Footer';
+import { JoinWindowTitle } from '../../components/JoinWindow/JoinWindow.style.js';
+import Footer from '../../components/Footer/Footer.jsx';
 
 
 const Gallery = () => {
