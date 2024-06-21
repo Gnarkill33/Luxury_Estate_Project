@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from'react-router-dom'
 import App from './App.jsx'
-import Gallery from './pages/Gallery/Gallery.jsx'
+import Villas from './pages/Villas/Villas.jsx'
 import './index.css'
 // import NotFoundPage from './pages/NotFoundPage/NotFoundPage.jsx'
 
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
   },
   { 
     path: '/villas', 
-    element: <Gallery />, 
+    element: <Villas />, 
     // errorElement: <NotFoundPage />,
   },
 ]);

@@ -1,13 +1,24 @@
 import NavBar from '../NavBar/NavBar';
-import MainSection from '../MainSection/MainSection';
-import { HeaderElement } from './Header.style.js';
+import Title from '../Title/Title';
+import { FilterWrapper } from './Header.style.js';
+import Filters from '../Filters';
+import SearchButton from '../SearchButton/SearchButton';
 
-const Header = () => {
+const Header = ({ type }) => {
     return (
-        < HeaderElement >
+        <>
             < NavBar />
-            < MainSection />
-        </ HeaderElement >
+            < Title 
+                type={type} 
+                textBig='BE OUR GUEST' 
+                textSmall='LIVE LIKE A KING IN OUR BEST HOUSES' 
+                textVillas='All Villas'
+                villasNumber='124'/>
+            <FilterWrapper $marginTop $marginBottom>
+                <Filters />
+                <SearchButton />
+            </FilterWrapper>
+        </>
     )
 }
 

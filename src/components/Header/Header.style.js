@@ -1,11 +1,20 @@
 import styled from 'styled-components';
-import Image from '../../assets/images/homepage_bg.svg'
 
-export const HeaderElement = styled.div`
-    background-image: url(${Image});
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    border-radius: 0px 10px 75px 10px;
-`
+export const FilterWrapper = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    border-bottom: 5px solid var(--gold-gold);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 65rem;
+    width: auto;
+    box-shadow: 0 20px 0 0 rgba(24, 29, 36, 0.72);
+    background: var(--white);
+    margin-top: ${props => props.$marginTop ? '3rem' : '7rem'};
+    margin-bottom: ${props => props.$marginBottom ? '2rem' : '10rem'};
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+`;

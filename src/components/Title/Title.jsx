@@ -1,12 +1,22 @@
-import { TitleWrapper, TitleElement } from './Title.style.js';
+import { TitleWrapper, TitleElement, Results} from './Title.style.js';
 
-const Title = () => {
+const Title = ( {type, textBig, textSmall, textVillas, villasNumber}) => {
     return (
         <>
-            <TitleElement >BE OUR GUEST</TitleElement>
-            <TitleWrapper>
-                <TitleElement $small>LIVE LIKE A KING IN OUR BEST HOUSES</TitleElement>
-            </TitleWrapper>
+        { type === 'primary' && 
+        <>
+        <TitleElement>{textBig}</TitleElement>
+        <TitleWrapper>
+            <TitleElement $small>{textSmall}</TitleElement>
+        </TitleWrapper>
+        </>
+        }
+        { type === 'secondary' && 
+        <>
+        <TitleElement $average>{textVillas}</TitleElement>
+        <Results>{villasNumber} results</Results>
+        </>
+        }
         </>
     )
 }

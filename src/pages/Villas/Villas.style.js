@@ -3,9 +3,7 @@ import Image from '/images/filters.svg';
 
 export const Container = styled.div`
     background-image: url(${Image});
-    background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 `;
 
 export const Results = styled.div`
@@ -18,13 +16,11 @@ export const Results = styled.div`
     text-align: center;
 `;
 
-export const CardWrapper = styled.div`
+export const AllVillas = styled.div`
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 25px;
     margin: 2rem 14rem;
-    position: absolute;
-    z-index: 1;
 `;

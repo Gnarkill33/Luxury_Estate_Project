@@ -71,7 +71,6 @@ export const SpecialityContainer = styled. div`
 export const SpecialityBottom = styled.div`
     background-image: url(${Image});
     width: 100%;
-    height: 509px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

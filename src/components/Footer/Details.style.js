@@ -9,7 +9,7 @@ export const Container = styled.div`
     @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
-        padding: 19rem 2rem 1rem 2rem;
+        padding: 15rem 2rem 1rem 2rem;
     }
 `;
 
