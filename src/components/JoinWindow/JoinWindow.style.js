@@ -63,7 +63,7 @@ export const JoinWindowDescription = styled.p`
     }
 `;
 
-export const JoinButton = styled.button`
+export const Button = styled.button`
     border-radius: 0 10px 10px 10px;
     border: none;
     padding: 15px;

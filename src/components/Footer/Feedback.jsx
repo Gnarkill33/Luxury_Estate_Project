@@ -1,5 +1,5 @@
 import { Wrapper, FeedbackInput } from "./Feedback.style.js";
-import {JoinWindowTitle, JoinButton} from '../JoinWindow/JoinWindow.style.js';
+import { JoinWindowTitle, Button } from '../JoinWindow/JoinWindow.style.js';
 
 const Feedback = () => {
     return (
@@ -8,7 +8,7 @@ const Feedback = () => {
             <FeedbackInput type="text" placeholder="Your Name" />
             <FeedbackInput type="text" placeholder="Email" />
             <FeedbackInput type="text" placeholder="Message" />
-            <JoinButton $small='25%'>Send</JoinButton>
+            <Button $small='25%'>Send</Button>
         </Wrapper>
     )
 }

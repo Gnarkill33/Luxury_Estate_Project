@@ -4,7 +4,7 @@ export const Container = styled.div`
     background: var(--primary-gold-light);
     display: flex;
     justify-content: space-between;
-    padding: 0 17.5rem 1rem 19rem;
+    padding: 0 17.5rem 1rem 17rem;
 
     @media screen and (max-width: 480px) {
         display: flex;

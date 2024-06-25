@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+    height: 660px;
+    display: flex;
+    justify-content: center;
+`;
+
 export const Top = styled.div`
     width: 65%;
     display: flex;
     gap: 1rem;
     position: absolute;
-    top: 27rem;
-    left: 19rem; 
+    bottom: 442px;
+    z-index: 1;
 
     @media screen and (max-width: 480px) {
         display: flex;
@@ -20,6 +26,9 @@ export const Top = styled.div`
 
 export const Bottom = styled.div`
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-`;
+    position: relative;
+    background: var(--primary-gold-light);
+`; 

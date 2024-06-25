@@ -12,11 +12,11 @@ export const Results = styled.div`
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0%;
     text-align: center;
 `;
 
 export const AllVillas = styled.div`
+    max-height: 70rem;
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);

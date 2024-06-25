@@ -1,4 +1,4 @@
-import { Top, Bottom } from './Footer.style.js';
+import { Top, Bottom, Container } from './Footer.style.js';
 import Contacts from './Contacts';
 import Feedback from './Feedback';
 import Details from './Details';
@@ -6,7 +6,7 @@ import Links from './Links';
 
 const Footer = () => {
     return (
-        <>
+        <Container>
             <Top>       
                 < Contacts />
                 < Feedback />
@@ -15,7 +15,7 @@ const Footer = () => {
                 <Details />
                 <Links />
             </Bottom>
-        </>
+        </Container>
     )
 }
 

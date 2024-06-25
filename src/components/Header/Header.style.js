@@ -12,7 +12,7 @@ export const FilterWrapper = styled.div`
     box-shadow: 0 20px 0 0 rgba(24, 29, 36, 0.72);
     background: var(--white);
     margin-top: ${props => props.$marginTop ? '3rem' : '7rem'};
-    margin-bottom: ${props => props.$marginBottom ? '2rem' : '10rem'};
+    margin-bottom: ${props => props.$marginBottom ? '1rem' : '10rem'};
 
     @media screen and (max-width: 480px) {
         display: none;

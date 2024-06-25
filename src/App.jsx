@@ -13,7 +13,7 @@ const App = () => {
     return (
         <>
         <Container>
-            < Header type='primary'/>
+            < Header type='primary' />
         </Container>
             < List />
             < Catalog />

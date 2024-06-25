@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: -1;
 `;
 
 export const Image = styled.div`

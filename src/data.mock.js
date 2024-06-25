@@ -106,16 +106,5 @@ export const mock = [
         "bathrooms": '5 bathrooms',
         "image": "images/Thebes.svg",
         "price": "From €240 / daily",
-    }, {
-        "id": "10",
-        "country": "Italy",
-        "location": "Mountains",
-        "name": "Villa Tosca",
-        "guests": "8 guests",
-        "bedrooms": '8 bedrooms',
-        "area": "460 m2",
-        "bathrooms": '4 bathrooms',
-        "image": "images/Tosca.svg",
-        "price": "From €350 / daily",
     },
 ]

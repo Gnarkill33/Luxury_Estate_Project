@@ -30,9 +30,9 @@ export const Link = styled.a`
     letter-spacing: ${props => props.$primary ? "0.27em" : "0.06em"};
     font-family: ${props => props.$primary ? "var(--font-family)" : "var(--second-family)"};
     color: ${props => props.$primary ? "var(--lightest)" : "var(--white)"};
-    margin-left: ${props => props.$primary? "10rem" : "0"};
+    margin-left: ${props => props.$primary? "15rem" : "0"};
     display: inline-block;
-    text-align: center;
+    text-align: ${props => props.$primary? "left" : "right"};
     line-height: 5rem;
     cursor: pointer;
 
