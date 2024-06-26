@@ -1,9 +1,10 @@
-import {JoinWindowTitle} from '../JoinWindow/JoinWindow.style.js';
-import {IconsWrapper} from './Details.style.js';
-import {Window, Body, Field, FieldText} from './Contacts.style.js';
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import {JoinWindowTitle} from '../JoinWindow/JoinWindow.style.js';
+import {IconsWrapper} from './Details.style.js';
+import {Window, Body, Field, FieldText} from './Contacts.style.js';
+
 
 const Contacts = () => {
     return (

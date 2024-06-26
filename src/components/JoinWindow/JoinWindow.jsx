@@ -1,4 +1,4 @@
-import { JoinWindowBody, JoinWindowTop, JoinWindowTitle, JoinWindowDescription, JoinButton } from './JoinWindow.style.js';
+import { JoinWindowBody, JoinWindowTop, JoinWindowTitle, JoinWindowDescription, Button } from './JoinWindow.style.js';
 
 const JoinWindow = () => {
     return (
@@ -12,9 +12,9 @@ const JoinWindow = () => {
             <JoinWindowDescription>
                 Join the elite league of  hosts specializing in luxury villas and unlock a world of exclusive opportunities.
             </JoinWindowDescription>
-            <JoinButton>
+            <Button>
                 Join today
-            </JoinButton>
+            </Button>
         </JoinWindowBody>
     )
 }

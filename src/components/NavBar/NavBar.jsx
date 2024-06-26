@@ -1,14 +1,14 @@
-import { Container, LinkWrapper, Link } from './NavBar.style.js';
+import { Container, Wrapper, Reference } from './NavBar.style.js';
 
 const NavBar = () => {
     return (
         <Container>
-            <Link $primary>LUXURY RENTALS</Link>
-            <LinkWrapper>
-                <Link>VILLAS</Link>
-                <Link>ABOUT US</Link>
-                <Link>CONTACT</Link>
-            </LinkWrapper>
+            <Reference to='/' $primary>LUXURY RENTALS</Reference>
+            <Wrapper>
+                <Reference to='/villas'>VILLAS</Reference>
+                <Reference>ABOUT US</Reference>
+                <Reference>CONTACT</Reference>
+            </Wrapper>
         </Container>
     )
 }

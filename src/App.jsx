@@ -1,21 +1,24 @@
 import './App.css'
 import './css_reset.css'
+import './index.css'
+import './App.style.js'
 import List from './components/List/List';
 import Header from './components/Header/Header';
 import Catalog from './components/Catalog/Catalog';
 import Specialities from './components/Specialities/Specialities';
-import Footer from './components/Footer/Footer';
+import BottomPart from './components/BottomPart/BottomPart';
+import { Container } from './App.style.js';
 
-
-
-function App() {
+const App = () => {
     return (
         <>
-            < Header />
+        <Container>
+            < Header type='primary' />
+        </Container>
             < List />
             < Catalog />
             < Specialities />
-            < Footer />
+            < BottomPart />
         </>
     )
 }

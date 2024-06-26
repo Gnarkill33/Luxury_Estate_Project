@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background: var(--primary-gold-light);
     display: flex;
     justify-content: space-between;
-    padding: 5rem 22rem 1rem 19rem;
+    padding: 11rem 22rem 1rem 17rem;
 
     @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
-        padding: 19rem 2rem 1rem 2rem;
+        padding: 15rem 2rem 1rem 2rem;
     }
 `;
 

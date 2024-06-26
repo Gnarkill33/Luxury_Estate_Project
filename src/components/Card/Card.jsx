@@ -1,41 +1,41 @@
 import { CardWrapper, CardImage, CardContainer, CardPrice, CardBody, CardName, CardDetails, CardLocation, IconDivider, DetailsWrapper, IconGuests, IconBeds, IconBaths, IconArea, IconLike } from './Card.style.js'
 
-const Card = ({ info }) => {
+const Card = ( item ) => {
     return (
         <CardWrapper>
-            < CardImage image={info.image} >
+            < CardImage image={item.image} >
                 <CardContainer>
                     <CardPrice>
-                        {info.price}
+                        {item.price}
                     </CardPrice>
                     <IconLike size='20px' />
                 </CardContainer>
             </CardImage>
             < CardBody >
                 <CardLocation>
-                    {info.country}
+                    {item.country}
                     <IconDivider size='8px' />
-                    {info.location}
+                    {item.location}
                 </CardLocation>
                 <CardName>
-                    {info.name}
+                    {item.name}
                 </CardName>
                 <CardDetails>
                     <DetailsWrapper>
                         <IconGuests />
-                        {info.guests}
+                        {item.guests}
                     </ DetailsWrapper>
                     <DetailsWrapper>
                         <IconBeds />
-                        {info.bedrooms}
+                        {item.bedrooms}
                     </ DetailsWrapper>
                     <DetailsWrapper>
                         <IconArea />
-                        {info.area}
+                        {item.area}
                     </ DetailsWrapper>
                     <DetailsWrapper>
                         <IconBaths />
-                        {info.bathrooms}
+                        {item.bathrooms}
                     </ DetailsWrapper>
                 </CardDetails >
             </ CardBody >

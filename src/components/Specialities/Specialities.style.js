@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 import Image from '../../assets/images/Bottom.svg';
-// import { IoIosWater } from "react-icons/io";
-// import { IoIosPaw } from "react-icons/io";
-// import { IoIosCar } from "react-icons/io";
-// import { IoMdFitness } from "react-icons/io";
-// import { IoMdBoat } from "react-icons/io";
 
 export const SpecialityBody = styled.div`
     display: flex;
@@ -76,11 +71,10 @@ export const SpecialityContainer = styled. div`
 export const SpecialityBottom = styled.div`
     background-image: url(${Image});
     width: 100%;
-    height: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    border-radius: 0px 0px 75px 10px;
+    border-radius: 0px 0px 75px 0px;
 `;
 
 export const Icon = styled.div`
