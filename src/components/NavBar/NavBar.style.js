@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
     height: 5rem;
@@ -12,7 +13,7 @@ export const Container = styled.div`
     }
 `;
 
-export const LinkWrapper = styled.div`
+export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
@@ -24,7 +25,7 @@ export const LinkWrapper = styled.div`
     }
 `
 
-export const Link = styled.a`
+export const Reference = styled(Link)`
     font-weight: ${props => props.$primary ? "500" : "400"};
     font-size: ${props => props.$primary ? "1.2em" : "1em"};
     letter-spacing: ${props => props.$primary ? "0.27em" : "0.06em"};
@@ -35,6 +36,7 @@ export const Link = styled.a`
     text-align: ${props => props.$primary? "left" : "right"};
     line-height: 5rem;
     cursor: pointer;
+    text-decoration: none;
 
     @media screen and (max-width: 480px) {
         margin-left: ${props => props.$primary? "2rem" : "0"};

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    height: 660px;
+    height: 22.5rem;
     display: flex;
     justify-content: center;
 `;
@@ -11,7 +11,7 @@ export const Top = styled.div`
     display: flex;
     gap: 1rem;
     position: absolute;
-    bottom: 442px;
+    bottom: 14.5rem;
     z-index: 1;
 
     @media screen and (max-width: 480px) {

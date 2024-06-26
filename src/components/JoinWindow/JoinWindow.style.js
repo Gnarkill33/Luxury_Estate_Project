@@ -80,6 +80,7 @@ export const Button = styled.button`
     min-width: 100px; 
     max-width: 20rem;
     margin: ${props => props.$margin || '2rem auto'};
+    cursor: pointer;
 
     @media screen and (max-width: 480px) {
         width: 230px;

@@ -1,6 +1,5 @@
 import { mock } from '../../data.mock.js';
 import Card from '../../components/Card/Card.jsx';
-// import { Button } from '../../components/JoinWindow/JoinWindow.style.js';
 import { Container, AllVillas } from './Villas.style.js';
 import BottomPart from '../../components/BottomPart/BottomPart.jsx';
 import Header from '../../components/Header/Header.jsx';
