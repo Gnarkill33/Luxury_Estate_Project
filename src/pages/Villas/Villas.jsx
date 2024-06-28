@@ -3,6 +3,7 @@ import Card from '../../components/Card/Card.jsx';
 import { Container, AllVillas } from './Villas.style.js';
 import BottomPart from '../../components/BottomPart/BottomPart.jsx';
 import Header from '../../components/Header/Header.jsx';
+import ExtraFilters from '../../components/ExtraFilters/ExtraFilters.jsx';
 
 const Villas = () => {
     return (
@@ -11,7 +12,8 @@ const Villas = () => {
             <Header
                 type='secondary' 
                 $marginTop 
-                $marginBottom /> 
+                $marginBottom />
+            <ExtraFilters />
             <AllVillas>
                 {mock.map((item) => {
                 return <Card key={item.id} {...item} />
