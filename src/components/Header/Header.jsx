@@ -6,7 +6,7 @@ import SearchButton from '../SearchButton/SearchButton';
 import { Button } from '../../components/JoinWindow/JoinWindow.style.js';
 
 
-const Header = ({ type }) => {
+const Header = ({ type, onShowClick }) => {
     return (
         <> 
         { type === 'primary' &&
@@ -40,7 +40,8 @@ const Header = ({ type }) => {
             <Button
                 $small $gold='var(--gold-gold-light)' 
                 $transparent='transparent' 
-                $margin='0 0 0 14rem'>
+                $margin='0 0 0 14.5rem'
+                onClick={() => onShowClick()}>
                     ADD FILTERS
             </Button>
         </>

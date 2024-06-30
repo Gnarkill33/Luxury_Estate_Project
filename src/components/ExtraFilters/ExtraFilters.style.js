@@ -1,4 +1,5 @@
 import styled from'styled-components';
+import { IoCloseSharp } from "react-icons/io5";
 
 export const Container = styled.div`
     max-width: 65rem;
@@ -12,6 +13,12 @@ export const Container = styled.div`
     background: var(--white);
 `;
 
+export const Top = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 3rem;
+`;
+
 export const Title = styled.h4`
     color: var(--dark);
     font-family: Rufina;
@@ -22,13 +29,15 @@ export const Title = styled.h4`
     text-align: left;
 `;
 
+export const ToClose = styled(IoCloseSharp)`
+    size: 20px;
+    cursor: pointer;
+`;
+
 export const Body = styled.div`
     display: flex;
     flex-direction: column;
-    // gap: 0.5rem;
-    // justify-items: start;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 1fr;
+    gap: 0.3rem;
 `;
 
 export const Category = styled.div`
@@ -38,7 +47,7 @@ export const Category = styled.div`
     font-weight: 700;
     line-height: 1.5rem;
     text-align: left;
-    
+    text-transform: capitalize;
 `;
 
 export const Option = styled.input`
@@ -59,7 +68,7 @@ export const Label = styled.label`
 
 export const Wrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 `;
 
 export const Bottom = styled.div`
