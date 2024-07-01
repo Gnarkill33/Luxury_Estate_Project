@@ -7,10 +7,10 @@ import Header from '../../components/Header/Header.jsx';
 import ExtraFilters from '../../components/ExtraFilters/ExtraFilters.jsx';
 
 const Villas = () => {
-    const [show, setShow] = useState(false);
+    const [showFilters, setShowFilters] = useState(false);
     
-    const onShowClick = () => {
-        setShow(!show);
+    const handleShow = () => {
+        setShowFilters(!showFilters);
     }
 
     return (
@@ -20,18 +20,18 @@ const Villas = () => {
                 type='secondary' 
                 $marginTop 
                 $marginBottom 
-                onShowClick={onShowClick}/>
-                    {show 
-                    ? <ExtraFilters
-                        onShowClick={onShowClick}
-                        />
-                    : null}
-            <AllVillas>
-                {mock.map((item) => {
-                return <Card key={item.id} {...item} />
-                })
+                onShowClick={handleShow}/>
+                {showFilters && 
+                    <ExtraFilters 
+                    onShowClick={handleShow}
+                    />
                 }
-            </AllVillas>
+                <AllVillas>
+                    {mock.map((item) => {
+                        return <Card key={item.id} {...item} />
+                        })
+                    }
+                </AllVillas>
         </Container>
         <BottomPart />
         </>     

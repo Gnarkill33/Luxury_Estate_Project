@@ -41,7 +41,7 @@ const Header = ({ type, onShowClick }) => {
                 $small $gold='var(--gold-gold-light)' 
                 $transparent='transparent' 
                 $margin='0 0 0 14.5rem'
-                onClick={() => onShowClick()}>
+                onClick={onShowClick}>
                     ADD FILTERS
             </Button>
         </>
