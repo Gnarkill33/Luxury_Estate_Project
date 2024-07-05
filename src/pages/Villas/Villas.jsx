@@ -8,48 +8,48 @@ import ExtraFilters from '../../components/ExtraFilters/ExtraFilters.jsx';
 
 const Villas = () => {
     const [showFilters, setShowFilters] = useState(false);
-    const [filterName, setFilterName] = useState('');
-    const [savedFilters, saveFilterName] = useState([]);
+    const [chosenFilters, setChosenFilters] = useState([]);
     
     const handleShow = () => {
         setShowFilters(!showFilters);
     }
 
-    const handleSetFilterName = (event) => {
-        setFilterName(event);
-        saveFilterName([...savedFilters, filterName]);
-        console.log(savedFilters);
+    const addFilterHandler = (filter) => {
+        if (chosenFilters.includes(filter)) {
+            setChosenFilters(prev => prev.filter(el => el !== filter))
+        } else {
+            setChosenFilters(prev => [...prev, filter])
+        }
     }
 
-    // const handleSaveFilterName = () => {
-    //     saveFilterName([...savedFilters, filterName]);
-    //     console.log(savedFilters);
-    // }
+    const resetFiltersHandler = () => {
+        setChosenFilters([])
+    }
 
     return (
         <>
-        <Container>
-            <Header
-                type='secondary' 
-                $marginTop 
-                $marginBottom 
-                onShowClick={handleShow}/>
+            <Container>
+                <Header
+                    type='secondary' 
+                    $marginTop 
+                    $marginBottom 
+                    onShowClick={handleShow}
+                />
                 {showFilters && 
                     <ExtraFilters 
-                    onShow={handleShow}
-                    onSetFilterName={handleSetFilterName}
-                    // onSaveFilterName={handleSaveFilterName}
-                    value={filterName}
+                        onShow={handleShow}
+                        chosenFilters={chosenFilters}
+                        onSetFilter={addFilterHandler}
+                        onResetFilters={resetFiltersHandler}
                     />
                 }
                 <AllVillas>
                     {mock.map((item) => {
                         return <Card key={item.id} {...item} />
-                        })
-                    }
+                    })}
                 </AllVillas>
-        </Container>
-        <BottomPart />
+            </Container>
+            <BottomPart/>
         </>     
     )
 }

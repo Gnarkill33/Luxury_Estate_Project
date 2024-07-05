@@ -3,50 +3,50 @@ import { Button } from "../JoinWindow/JoinWindow.style.js";
 import { filters } from "../../filters.mock.js";
 
 
-const ExtraFilters = ( { onShow, onSetFilterName, onSaveFilterName } ) => {
+const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters }) => {
     return (
-        <Container > 
+        <Container> 
             <Top>
-                <Title >Filters</ Title>
-                <ToClose 
-                onClick={onShow}
-                />
+                <Title>Filters</Title>
+                <ToClose onClick={onShow}/>
             </Top>
             <Wrapper>
             {Object.keys(filters).map(filter => 
-                <Body>
-                <Category>{filter}</Category> {
-                    filters[filter].values.map(value => (
-                    <Label>
-                        <Option 
-                        type="checkbox"
-                        name={value} 
-                        onClick={(event) => {
-                            onSetFilterName(event.target.name); 
-                            // onSaveFilterName()
-                        }}/> {value}
-                    </Label>))
-                }
-            </ Body> 
+                <Body key={filter.id}>
+                <Category>{filter}</Category>
+                    {filters[filter].values.map(value => (
+                        <Label key={value}>
+                            <Option 
+                                type="checkbox"
+                                name={value} 
+                                checked={chosenFilters.includes(value)}
+                                onClick={() => {
+                                    onSetFilter(value); 
+                                }}
+                            /> 
+                            {value}
+                        </Label>
+                    ))}
+            </Body> 
             )}
             </Wrapper>
-            <Bottom > 
+            <Bottom> 
                 <Button 
                     $small='15%' 
                     $light='var(--primary-gold-dark)' 
                     $white='var(--white)' 
                     $margin='1rem'
-                    >
-                        Clear All
-                    </Button>
+                    onClick={onResetFilters}
+                >
+                    Clear All
+                </Button>
                 <Button 
                     $small='15%' 
                     $margin='1rem'>
                         Show 24 villas
                 </Button>
-            </ Bottom>
-        </ Container>
-        
+            </Bottom>
+        </Container>
     )
 }
 
