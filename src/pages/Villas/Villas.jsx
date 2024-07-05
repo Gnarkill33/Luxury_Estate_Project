@@ -8,10 +8,23 @@ import ExtraFilters from '../../components/ExtraFilters/ExtraFilters.jsx';
 
 const Villas = () => {
     const [showFilters, setShowFilters] = useState(false);
+    const [filterName, setFilterName] = useState('');
+    const [savedFilters, saveFilterName] = useState([]);
     
     const handleShow = () => {
         setShowFilters(!showFilters);
     }
+
+    const handleSetFilterName = (event) => {
+        setFilterName(event);
+        saveFilterName([...savedFilters, filterName]);
+        console.log(savedFilters);
+    }
+
+    // const handleSaveFilterName = () => {
+    //     saveFilterName([...savedFilters, filterName]);
+    //     console.log(savedFilters);
+    // }
 
     return (
         <>
@@ -23,7 +36,10 @@ const Villas = () => {
                 onShowClick={handleShow}/>
                 {showFilters && 
                     <ExtraFilters 
-                    onShowClick={handleShow}
+                    onShow={handleShow}
+                    onSetFilterName={handleSetFilterName}
+                    // onSaveFilterName={handleSaveFilterName}
+                    value={filterName}
                     />
                 }
                 <AllVillas>

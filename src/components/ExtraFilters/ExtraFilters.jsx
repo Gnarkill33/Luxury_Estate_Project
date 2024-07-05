@@ -1,33 +1,31 @@
-import { useEffect, useState } from "react";
 import { Container, Top, Title, ToClose, Body, Category, Option, Label, Wrapper, Bottom } from "./ExtraFilters.style.js";
 import { Button } from "../JoinWindow/JoinWindow.style.js";
 import { filters } from "../../filters.mock.js";
 
 
-const ExtraFilters = ( { onShowClick } ) => {
-    const [checked, setChecked] = useState();
-
-    const handleChecked = () => {
-        setChecked(false);
-    }
-
-    useEffect(() => {
-        setChecked();
-    }, [checked])
-
+const ExtraFilters = ( { onShow, onSetFilterName, onSaveFilterName } ) => {
     return (
         <Container > 
             <Top>
                 <Title >Filters</ Title>
                 <ToClose 
-                onClick={onShowClick}
+                onClick={onShow}
                 />
             </Top>
             <Wrapper>
             {Object.keys(filters).map(filter => 
-                <Body key={filter}>
+                <Body>
                 <Category>{filter}</Category> {
-                    filters[filter].values.map(value => <Label key={filter}><Option type="checkbox" checked={checked}/> {value}</Label>)
+                    filters[filter].values.map(value => (
+                    <Label>
+                        <Option 
+                        type="checkbox"
+                        name={value} 
+                        onClick={(event) => {
+                            onSetFilterName(event.target.name); 
+                            // onSaveFilterName()
+                        }}/> {value}
+                    </Label>))
                 }
             </ Body> 
             )}
@@ -38,7 +36,7 @@ const ExtraFilters = ( { onShowClick } ) => {
                     $light='var(--primary-gold-dark)' 
                     $white='var(--white)' 
                     $margin='1rem'
-                    onClick={handleChecked}>
+                    >
                         Clear All
                     </Button>
                 <Button 
