@@ -15,7 +15,7 @@ const Card = ( item ) => {
                 <CardLocation>
                     {item.country}
                     <IconDivider size='8px' />
-                    {item.location}
+                    {item.place}
                 </CardLocation>
                 <CardName>
                     {item.name}

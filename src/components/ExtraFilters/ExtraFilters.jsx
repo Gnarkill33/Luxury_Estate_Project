@@ -2,8 +2,7 @@ import { Container, Top, Title, ToClose, Body, Category, Option, Label, Wrapper,
 import { Button } from "../JoinWindow/JoinWindow.style.js";
 import { filters } from "../../filters.mock.js";
 
-
-const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters }) => {
+const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, filteredVillasHandler }) => {
     return (
         <Container> 
             <Top>
@@ -19,11 +18,11 @@ const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters }) =>
                             <Option 
                                 type="checkbox"
                                 name={value} 
-                                checked={chosenFilters.includes(value)}
+                                checked={chosenFilters.some(filter => filter.value === value)}
                                 onClick={() => {
-                                    onSetFilter(value); 
+                                    onSetFilter(value, filter);
                                 }}
-                            /> 
+                            />
                             {value}
                         </Label>
                     ))}
@@ -41,6 +40,7 @@ const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters }) =>
                     Clear All
                 </Button>
                 <Button 
+                    onClick={filteredVillasHandler}
                     $small='15%' 
                     $margin='1rem'>
                         Show 24 villas
