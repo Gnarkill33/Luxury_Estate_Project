@@ -23,7 +23,7 @@ export const mock = [
             values: ["Table tennis", "Playground"]
         },
         "amenities": {
-            values: ["Fireplace"]
+            values: []
         },
     },
     {
@@ -47,7 +47,7 @@ export const mock = [
             values: ["Private parking", "Outdoor dining table"],
         },
         "activity": {
-            values: ["Table tennis"]
+            values: []
         },
         "amenities": {
             values: ["Fireplace", "Feeding chair"]
@@ -71,7 +71,7 @@ export const mock = [
             values: ["Indoor pool", "Jacuzzi", "Sauna"]
         },
         "outdoor": {
-            values: ["Electric car charger", "Private parking"],
+            values: ["Private parking"],
         },
         "activity": {
             values: ["Satellite/Cable"]
@@ -98,7 +98,7 @@ export const mock = [
             values: ["Swimming pool", "Sauna"]
         },
         "outdoor": {
-            values: ["Boat mooring", "Outdoor grill"],
+            values: ["Outdoor grill"],
         },
         "activity": {
             values: ["Playstation", "Playground"]
@@ -122,7 +122,7 @@ export const mock = [
             values: ["Seaside"]
         },
         "wellness": {
-            values: ["Fitness/Gym"]
+            values: []
         },
         "outdoor": {
             values: ["Private parking", "Outdoor dining table"],
@@ -158,7 +158,7 @@ export const mock = [
             values: ["Playground"]
         },
         "amenities": {
-            values: ["Air conditioning"]
+            values: []
         },
     }, 
     {
@@ -209,7 +209,7 @@ export const mock = [
             values: ["Outdoor grill"],
         },
         "activity": {
-            values: ["Playstation"]
+            values: []
         },
         "amenities": {
             values: ["Feeding chair"]
@@ -228,6 +228,9 @@ export const mock = [
         "price": "From €240 / daily",
         "location": {
             values: ["Mountains"]
+        },
+        "wellness": {
+            values: []
         },
         "outdoor": {
             values: ["Private parking"],

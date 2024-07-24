@@ -2,7 +2,7 @@ import { Container, Top, Title, ToClose, Body, Category, Option, Label, Wrapper,
 import { Button } from "../JoinWindow/JoinWindow.style.js";
 import { filters } from "../../filters.mock.js";
 
-const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, filteredVillasHandler }) => {
+const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, onClickShowNumber, filteredVillasHandler,filteredVillasNumber }) => {
     return (
         <Container> 
             <Top>
@@ -21,6 +21,7 @@ const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, filt
                                 checked={chosenFilters.some(filter => filter.value === value)}
                                 onClick={() => {
                                     onSetFilter(value, filter);
+                                    onClickShowNumber();
                                 }}
                             />
                             {value}
@@ -43,7 +44,7 @@ const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, filt
                     onClick={filteredVillasHandler}
                     $small='15%' 
                     $margin='1rem'>
-                        Show 24 villas
+                        Show {filteredVillasNumber} villas
                 </Button>
             </Bottom>
         </Container>
