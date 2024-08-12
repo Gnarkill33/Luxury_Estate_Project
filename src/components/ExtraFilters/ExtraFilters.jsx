@@ -21,7 +21,6 @@ const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, onCl
                                 checked={chosenFilters.some(filter => filter.value === value)}
                                 onClick={() => {
                                     onSetFilter(value, filter);
-                                    onClickShowNumber();
                                 }}
                             />
                             {value}

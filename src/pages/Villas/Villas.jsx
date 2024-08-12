@@ -45,37 +45,14 @@ const Villas = () => {
             return returnedVilla
         });                
         setFilteredVillas(filteredVillas);
+        setFilteredVillasNumber(filteredVillas.length);
     };
 
-    const showNumberHandler = () => { 
-        // const filteredVillas = prev.filter(function(villa) {
-        //     let returnedVilla;
-        //     chosenFilters.forEach((filter) => {
-        //         if (villa[filter.category].values.includes(filter.value)) {
-        //             returnedVilla = villa;
-        //         };
-        //     });
-        //     return returnedVilla
-        // });
-        const filteredVillas = mock.filter(function(villa) {
-            let returnedVilla;
-            chosenFilters.forEach((filter) => {
-                if (villa[filter.category].values.includes(filter.value)) {
-                    returnedVilla = villa;
-                };
-            });
-            return returnedVilla
-        });
-        // debugger;
-        // filteredVillasHandler(prev => prev.length);
-        // debugger;
-        setFilteredVillasNumber(filteredVillas.length);
-        console.log(`Массив вилл: ${filteredVillas}`, `длина массива: ${filteredVillas.length}`);
-    }
-
     useEffect(() => {
-        console.log(filteredVillas.length, 'useEffect')
-    }, [filteredVillas]);
+        if (chosenFilters.length) {
+        filteredVillasHandler();
+        }
+    }, [chosenFilters]);
     
     return (
         <>
@@ -94,7 +71,6 @@ const Villas = () => {
                         onResetFilters={resetFiltersHandler}
                         filteredVillasHandler={filteredVillasHandler}
                         filteredVillasNumber={filteredVillasNumber}
-                        onClickShowNumber={showNumberHandler}                        
                     />
                 }
                 <AllVillas>

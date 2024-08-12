@@ -225,7 +225,7 @@ export const mock = [
         "area": "460 m2",
         "bathrooms": '5 bathrooms',
         "image": "images/Thebes.svg",
-        "price": "From €240 / daily",
+        "price": "From € 240 / daily",
         "location": {
             values: ["Mountains"]
         },
