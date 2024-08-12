@@ -69,6 +69,7 @@ export const Button = styled.button`
     padding: 15px;
     height: 2.5rem;
     background: ${props => props.$transparent || 'var(--primary-gold-dark)'};
+    background: ${props => props.$white || null};
     font-family: var(--font-family);
     font-size: 12px;
     font-weight: 600;
@@ -76,6 +77,7 @@ export const Button = styled.button`
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: ${props => props.$gold || 'var(--white)'};
+    color: ${props => props.$light || null};
     width: ${props => props.$small || '100%'};
     min-width: 100px; 
     max-width: 20rem;
