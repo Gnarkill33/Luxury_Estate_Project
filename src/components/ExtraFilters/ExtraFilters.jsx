@@ -2,7 +2,7 @@ import { Container, Top, Title, ToClose, Body, Category, Option, Label, Wrapper,
 import { Button } from "../JoinWindow/JoinWindow.style.js";
 import { filters } from "../../filters.mock.js";
 
-const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, onClickShowNumber, filteredVillasHandler,filteredVillasNumber }) => {
+const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, filteredVillasHandler,filteredVillasNumber }) => {
     return (
         <Container> 
             <Top>
