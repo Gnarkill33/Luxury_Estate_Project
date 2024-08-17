@@ -10,11 +10,11 @@ export const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: 8px 8px 30px 8px;
-    width: 19rem;
+    min-width: 300px;
+    width: 100%;
     height: 25rem;
     background: var(--white);
     margin: 0 auto;
-    max-width: 30rem;
 
     @media screen and (max-width: 480px) {
         height: 24rem;

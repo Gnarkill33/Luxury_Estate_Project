@@ -44,11 +44,12 @@ export const ListDescription = styled.div`
 
 export const ListBody = styled.div`
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     overflow: hidden;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     max-width: 60rem;
+    width: 100%;
     margin: 0 auto;
 
     @media screen and (max-width: 480px) {
