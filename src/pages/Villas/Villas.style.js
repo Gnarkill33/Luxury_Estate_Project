@@ -22,7 +22,7 @@ export const AllVillas = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 25px;
-    margin: 2rem 14rem;
+    margin: 2rem 10rem;
     position: relative;
     z-index: 1;
 `;

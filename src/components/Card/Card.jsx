@@ -6,7 +6,7 @@ const Card = ( item ) => {
             < CardImage image={item.image} >
                 <CardContainer>
                     <CardPrice>
-                        {item.price}
+                    From €{item.price} / daily
                     </CardPrice>
                     <IconLike size='20px' />
                 </CardContainer>
@@ -23,19 +23,19 @@ const Card = ( item ) => {
                 <CardDetails>
                     <DetailsWrapper>
                         <IconGuests />
-                        {item.guests}
+                        {item.guests} guests
                     </ DetailsWrapper>
                     <DetailsWrapper>
                         <IconBeds />
-                        {item.bedrooms}
+                        {item.bedrooms} bedrooms
                     </ DetailsWrapper>
                     <DetailsWrapper>
                         <IconArea />
-                        {item.area}
+                        {item.area} m2
                     </ DetailsWrapper>
                     <DetailsWrapper>
                         <IconBaths />
-                        {item.bathrooms}
+                        {item.bathrooms} bathrooms
                     </ DetailsWrapper>
                 </CardDetails >
             </ CardBody >

@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react';
-import { mock } from '../../data.mock.js';
+import { useVillasData } from '../../api/useVillasData.js';
 import Card from '../../components/Card/Card.jsx';
 import { Container, AllVillas } from './Villas.style.js';
 import BottomPart from '../../components/BottomPart/BottomPart.jsx';
 import Header from '../../components/Header/Header.jsx';
 import ExtraFilters from '../../components/ExtraFilters/ExtraFilters.jsx';
 
+
 const Villas = () => {
+    const [villas, loading] = useVillasData();
     const [showFilters, setShowFilters] = useState(false);
     const [chosenFilters, setChosenFilters] = useState([]);
-    const [filteredVillas, setFilteredVillas] = useState(mock);
-    const [filteredVillasNumber, setFilteredVillasNumber] = useState(mock.length);
+    const [filteredVillas, setFilteredVillas] = useState(villas);
+    const [filteredVillasNumber, setFilteredVillasNumber] = useState(villas.length);
 
     const handleShow = () => {
         setShowFilters(!showFilters);
@@ -30,12 +32,12 @@ const Villas = () => {
 
     const resetFiltersHandler = () => {
         setChosenFilters([])
-        setFilteredVillas(mock);
-        setFilteredVillasNumber(mock.length);
+        setFilteredVillas(villas);
+        setFilteredVillasNumber(villas.length);
     }
 
     const filteredVillasHandler = () => {
-        const filteredVillas = mock.filter(function(villa) {
+        const filteredVillas = villas.filter(function(villa) {
             let returnedVilla;
             chosenFilters.forEach((filter) => {
                 if (villa[filter.category].values.includes(filter.value)) {
@@ -49,11 +51,22 @@ const Villas = () => {
     };
 
     useEffect(() => {
+        if (villas.length) {
+            setFilteredVillas(villas);
+            setFilteredVillasNumber(villas.length);
+        }
+    }, [villas]);
+
+    useEffect(() => {
         if (chosenFilters.length) {
         filteredVillasHandler();
         }
     }, [chosenFilters]);
-    
+
+    if (loading) {
+        return <p>Loading...</p>
+    }
+
     return (
         <>
             <Container>
