@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export const useFetch = () => {
+export const useVillasData = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 

@@ -1,9 +1,10 @@
 import { ListWrapper, ListTitle, ListDescription, ListBody } from './List.style.js';
 import Card from '../Card/Card.jsx';
-import { useFetch } from '../../hooks/useFetch.js'; 
+import { useVillasData } from '../../api/useVillasData.js'; 
 
 const List = () => {
-    const [villas] = useFetch();
+    const [villas] = useVillasData();
+    
     return (
         <ListWrapper>
             <ListTitle >

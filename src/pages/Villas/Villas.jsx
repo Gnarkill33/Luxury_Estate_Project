@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useFetch } from '../../hooks/useFetch';
+import { useVillasData } from '../../api/useVillasData.js';
 import Card from '../../components/Card/Card.jsx';
 import { Container, AllVillas } from './Villas.style.js';
 import BottomPart from '../../components/BottomPart/BottomPart.jsx';
@@ -8,15 +8,7 @@ import ExtraFilters from '../../components/ExtraFilters/ExtraFilters.jsx';
 
 
 const Villas = () => {
-    const [villas, loading] = useFetch();
-    
-    useEffect(() => {
-        if (villas.length) {
-            setFilteredVillas(villas);
-            setFilteredVillasNumber(villas.length);
-        }
-    }, [villas]);
-
+    const [villas, loading] = useVillasData();
     const [showFilters, setShowFilters] = useState(false);
     const [chosenFilters, setChosenFilters] = useState([]);
     const [filteredVillas, setFilteredVillas] = useState(villas);
@@ -59,6 +51,13 @@ const Villas = () => {
     };
 
     useEffect(() => {
+        if (villas.length) {
+            setFilteredVillas(villas);
+            setFilteredVillasNumber(villas.length);
+        }
+    }, [villas]);
+
+    useEffect(() => {
         if (chosenFilters.length) {
         filteredVillasHandler();
         }
@@ -67,7 +66,7 @@ const Villas = () => {
     if (loading) {
         return <p>Loading...</p>
     }
-    
+
     return (
         <>
             <Container>
