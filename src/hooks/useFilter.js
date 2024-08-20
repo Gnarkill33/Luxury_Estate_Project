@@ -1,29 +1,29 @@
 import { useState, useEffect  } from 'react';
-import { mock } from '../data.mock.js';
+import { useVillasData } from '../api/useVillasData.js';
 
 export const useFilter = () => {
-    const [optionsLocations, setOptionsLocations] = useState([]);
-    const [optionsGuests, setOptionsGuests] = useState([]);
-    const [optionsPrices, setOptionsPrices] = useState([]);
+    const [villas] = useVillasData();
+    const [optionsLocations, setOptionsLocations] = useState();
+    const [optionsGuests, setOptionsGuests] = useState();
+    const [optionsPrices, setOptionsPrices] = useState();
 
     useEffect(() => {
-        const uniqueMockLocations = [... new Set(mock.map((villa) => villa.location.values).flat())];
-        const mockLocationsSelect = uniqueMockLocations.map((item, index) => ({value: index, label: item}));
-        setOptionsLocations(mockLocationsSelect);
+        const uniqueLocations = [... new Set(villas.map((villa) => villa.location.values).flat())];
+        const locationsSelect = uniqueLocations.map((item, index) => ({value: index, label: item}));
+        setOptionsLocations(locationsSelect);
 
-        const uniqueMockGuests = [... new Set(mock.map((villa) => parseInt(villa.guests)))];
-        const maxMockGuests = Math.max(...uniqueMockGuests);
-        const mockGuestsSelect = [];
-        for (let i = 1; i <= maxMockGuests; i++) {
-            mockGuestsSelect.push({value: i, label: i === 1 ? `${i} guest` : `${i} guests`});
+        const uniqueGuests = [... new Set(villas.map((villa) => parseInt(villa.guests)))];
+        const maxGuests = Math.max(...uniqueGuests);
+        const guestsSelect = [];
+        for (let i = 1; i <= maxGuests; i++) {
+            guestsSelect.push({value: i, label: i === 1 ? `${i} guest` : `${i} guests`});
             };
-        setOptionsGuests(mockGuestsSelect);
+        setOptionsGuests(guestsSelect);
 
-        const uniqueMockPrices = [... new Set(mock.map((villa) => parseInt(villa.price.match(/\d+/))).sort())];
-        const mockPricesSelect = uniqueMockPrices.map((item) => ({value: item, label: `From €${item} / daily`}));
-        setOptionsPrices(mockPricesSelect);
-    }, []);
+        const uniquePrices = [... new Set(villas.map((villa) => villa.price).sort())];
+        const pricesSelect = uniquePrices.map((item) => ({value: item, label: `From €${item} / daily`}));
+        setOptionsPrices(pricesSelect);
+    }, [villas]);
 
         return [optionsLocations, optionsGuests, optionsPrices];
 }
-

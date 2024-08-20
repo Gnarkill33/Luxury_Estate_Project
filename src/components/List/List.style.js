@@ -46,7 +46,7 @@ export const ListBody = styled.div`
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
     max-width: 60rem;
     width: 100%;

@@ -1,8 +1,10 @@
 import { Container, Top, Title, ToClose, Body, Category, Option, Label, Wrapper, Bottom } from "./ExtraFilters.style.js";
 import { Button } from "../JoinWindow/JoinWindow.style.js";
-import { filters } from "../../filters.mock.js";
+import { useExtraFiltersData } from "../../api/useExtraFiltersData.js";
 
 const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, filteredVillasHandler,filteredVillasNumber }) => {
+    const [ extraFilters ] = useExtraFiltersData();
+
     return (
         <Container> 
             <Top>
@@ -10,24 +12,29 @@ const ExtraFilters = ({ onShow, onSetFilter, chosenFilters, onResetFilters, filt
                 <ToClose onClick={onShow}/>
             </Top>
             <Wrapper>
-            {Object.keys(filters).map(filter => 
-                <Body key={filter.id}>
-                <Category>{filter}</Category>
-                    {filters[filter].values.map(value => (
-                        <Label key={value}>
-                            <Option 
-                                type="checkbox"
-                                name={value} 
-                                checked={chosenFilters.some(filter => filter.value === value)}
-                                onClick={() => {
-                                    onSetFilter(value, filter);
-                                }}
-                            />
-                            {value}
-                        </Label>
-                    ))}
-            </Body> 
-            )}
+                {extraFilters.map(item => {
+                    const filter = Object.keys(item)[0];
+                    const values = item[filter].values;
+                    return (
+                        <Body key={filter.id}>
+                            <Category>{filter}</Category>
+                            {values.map((value) =>
+                                <Label key={value}>
+                                    <Option 
+                                        type="checkbox"
+                                        name={value} 
+                                        checked={chosenFilters.some(filter => filter.value === value)}
+                                        onClick={() => {
+                                            onSetFilter(value, filter);
+                                        }}
+                                    />
+                                    {value}
+                                </Label>
+                            )}
+                        </Body>
+                    )
+            }
+        )}
             </Wrapper>
             <Bottom> 
                 <Button 

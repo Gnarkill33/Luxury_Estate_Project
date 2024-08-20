@@ -1,9 +1,10 @@
 import { ListWrapper, ListTitle, ListDescription, ListBody } from './List.style.js';
 import Card from '../Card/Card.jsx';
-import { useVillasData } from '../../api/useVillasData.js'; 
+import { useTopVillasData } from '../../api/useTopVillasData.js'; 
 
 const List = () => {
-    const [villas] = useVillasData();
+    const [topVillas] = useTopVillasData();
+    console.log(topVillas);
     
     return (
         <ListWrapper>
@@ -14,7 +15,7 @@ const List = () => {
                 Curabitur efficitur ante vel mi bibendum, et maximus nisl ultricies. Morbi nec tempus dui, sit amet facilisis nisl. Ut vel urna quis urna tristique tempus. Etiam lobortis est at mauris eleifend, id tempor purus ultricies.
             </ ListDescription>
             <ListBody>
-                {villas.map(item => {
+                {topVillas.map(item => {
                     return <Card key={item.id} {...item} index={item.id} />
                 })
                 }
