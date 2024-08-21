@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export const useVillasData = () => {
-    const [data, setData] = useState([]);
+    const [villasData, setVillasData] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -12,14 +12,14 @@ export const useVillasData = () => {
                 throw new Error("Failed to fetch data");
             }
             const json = await response.json();
-            setData(json);
-            } catch (error) {
+            setVillasData(json);
+        } catch (error) {
             console.log("Failed to fetch data", error);
-            };
+        };
             setLoading(false);
     }
     fetchData();
 }, []);
 
-    return [data, loading];
+    return [villasData, loading];
 };
