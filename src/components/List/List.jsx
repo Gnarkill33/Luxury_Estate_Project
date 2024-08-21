@@ -4,7 +4,6 @@ import { useTopVillasData } from '../../api/useTopVillasData.js';
 
 const List = () => {
     const [topVillas] = useTopVillasData();
-    console.log(topVillas);
     
     return (
         <ListWrapper>
